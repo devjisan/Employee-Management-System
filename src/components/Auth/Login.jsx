@@ -1,12 +1,11 @@
 import React from 'react'
 import { useState } from 'react'
 
-function Login() {
+function Login({handleLogin}) {
 
     const submitHandler =(e)=>{
         e.preventDefault()
-        console.log('Email is' , email)
-        console.log('Password is', password)
+        handleLogin(email, password)
         setEmail('')
         setPassword('')
         
