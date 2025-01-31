@@ -13,12 +13,13 @@ function Login({handleLogin}) {
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    
 
   return (
     <div className='flex h-screen w-screen items-center justify-center'>
         <div className='border-2 rounded-xl border-emerald-600 p-20'>
             <form
-            onSubmit={(e)=>submitHandler(e)}
+            onSubmit={(a)=>submitHandler(a)}
             className='flex flex-col items-center justify-center'>
                 <input
                 value={email}
